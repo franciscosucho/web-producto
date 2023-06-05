@@ -1,0 +1,166 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Boska";
+}
+
+body {
+  overflow: hidden;
+  background: linear-gradient(to right, #000000, #202020);
+  background-repeat: no-repeat;
+}
+body header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+body header h2 {
+  border-bottom: 1px solid white;
+  position: absolute;
+  left: 420px;
+  color: white;
+}
+body header ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+body header ul li {
+  transition: transform 0.3s;
+}
+body header ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3em;
+}
+body header ul li:hover {
+  transform: scale(1.2);
+}
+body header .sign-in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 90%;
+  border-radius: 10px;
+  background-color: rgb(17, 17, 17);
+  height: 40px;
+  width: 120px;
+  transition: background-color 0.3s;
+}
+body header .sign-in h3 {
+  font-weight: 400;
+  font-family: "Hind", sans-serif;
+  color: white;
+}
+body header .sign-in:hover {
+  background-color: rgb(44, 44, 44);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+main .cont-img img {
+  height: 89.5%;
+  width: 50%;
+  position: absolute;
+}
+main .cont-txt {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: absolute;
+  gap: 50px;
+  top: 10;
+  left: 50%;
+  height: 100vh;
+  width: 50%;
+  z-index: 10;
+}
+main .cont-txt h1 {
+  font-family: "Hind", sans-serif;
+  color: azure;
+  width: 600px;
+}
+main .cont-txt p {
+  font-size: 1.2em;
+  color: white;
+  width: 600px;
+}
+main .cont-txt .cont-button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  width: 50%;
+  height: 100px;
+}
+main .cont-txt .cont-button .get {
+  font-family: "Hind", sans-serif;
+  height: 50px;
+  width: 200px;
+  border-radius: 10px;
+  background-color: rgba(218, 204, 162, 0.937254902);
+  border: 1px solid white;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  transition: transform 0.2s;
+}
+main .cont-txt .cont-button .get:hover {
+  transform: scale(1.1);
+}
+main .cont-txt .cont-button .ver {
+  font-family: "Hind", sans-serif;
+  height: 50px;
+  width: 200px;
+  border-radius: 10px;
+  background-color: rgba(218, 204, 162, 0);
+  border: 1px solid white;
+  font-size: 1.5em;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+  transition: transform 0.2s;
+}
+main .cont-txt .cont-button .ver:hover {
+  transform: scale(1.1);
+}
+main .cont-txt .cont-info {
+  background-color: rgba(0, 255, 255, 0);
+  width: 600px;
+  height: 200px;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+main .cont-txt .cont-info ul {
+  height: 100%;
+  width: 100%;
+  color: white;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 60px;
+}
+main .cont-txt .cont-info ul .item-list {
+  margin-left: 20px;
+  width: 130px;
+}
+main .cont-txt .cont-info ul .item-list h3 {
+  color: rgb(168, 162, 155);
+  font-weight: 600;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  font-family: "Hind", sans-serif;
+}
+main .cont-txt .cont-info ul .item-list p {
+  font-family: "Hind", sans-serif;
+  font-size: 1.5em;
+}/*# sourceMappingURL=style.css.map */
