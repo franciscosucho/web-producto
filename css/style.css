@@ -12,14 +12,14 @@ body {
 }
 body header {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  gap: 30%;
   height: 10vh;
 }
 body header h2 {
+  margin-left: 20px;
   border-bottom: 1px solid white;
-  position: absolute;
-  left: 420px;
   color: white;
 }
 body header ul {
@@ -47,7 +47,7 @@ body header .sign-in {
   position: absolute;
   left: 90%;
   border-radius: 10px;
-  background-color: rgb(17, 17, 17);
+  background-color: rgb(48, 46, 46);
   height: 40px;
   width: 120px;
   transition: background-color 0.3s;
@@ -63,20 +63,24 @@ body header .sign-in:hover {
 
 main {
   display: flex;
-  flex-direction: column;
+  justify-content: baseline;
+  flex-direction: row;
+  gap: 100px;
   height: 100vh;
   width: 100%;
 }
-main .cont-img img {
+main .cont-img {
   height: 89.5%;
   width: 50%;
-  position: absolute;
+}
+main .cont-img img {
+  height: 100%;
+  width: 100%;
 }
 main .cont-txt {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  position: absolute;
   gap: 50px;
   top: 10;
   left: 50%;
@@ -163,74 +167,4 @@ main .cont-txt .cont-info ul .item-list h3 {
 main .cont-txt .cont-info ul .item-list p {
   font-family: "Hind", sans-serif;
   font-size: 1.5em;
-}
-
-@media (max-width: 1500px) {
-  body {
-    overflow-x: hidden;
-  }
-  body header h2 {
-    position: absolute;
-    left: 20px;
-  }
-  body header .sign-in {
-    left: 85%;
-  }
-}
-@media (max-width: 1300px) {
-  body {
-    overflow-x: hidden;
-  }
-  body header h2 {
-    position: absolute;
-    left: 20px;
-  }
-  body header .sign-in {
-    left: 85%;
-  }
-  body main .cont-img img {
-    width: 20%;
-    position: absolute;
-  }
-  body main .cont-txt h1 {
-    font-family: "Hind", sans-serif;
-    color: azure;
-    width: 400px;
-    margin-bottom: 5px;
-  }
-  body main .cont-txt p {
-    font-size: 1.2em;
-    color: white;
-    width: 400px;
-  }
-  body main .cont-txt .cont-info {
-    width: 400px;
-    height: 150px;
-  }
-  body main .cont-txt .cont-info ul {
-    gap: 5px;
-  }
-  body main .cont-txt .cont-info ul .item-list {
-    margin-left: 10px;
-    width: 130px;
-  }
-  body main .cont-txt .cont-info ul .item-list h3 {
-    font-weight: 700;
-    font-size: 1.2em;
-    margin-bottom: 20px;
-  }
-  body main .cont-txt .cont-info ul .item-list p {
-    font-family: "Hind", sans-serif;
-    font-size: 1.2em;
-  }
-}
-@media (max-height: 1000px) {
-  body main .cont-img img {
-    height: 80.5%;
-    width: 50%;
-    position: absolute;
-  }
-  body main .cont-txt {
-    gap: 10px;
-  }
 }/*# sourceMappingURL=style.css.map */
